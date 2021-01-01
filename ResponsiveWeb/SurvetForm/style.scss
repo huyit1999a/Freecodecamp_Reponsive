@@ -1,0 +1,136 @@
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background: var(--color-darkblue);
+    background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+body {
+    color: white;
+    font-size: 1.6rem;
+    font-family: 'Poppins', 'san-serif';
+    font-weight: 400;
+}
+
+.header {
+    text-align: center;
+    padding-top: 5.6rem;
+    padding-bottom: 3.2rem;
+}
+
+.btn {
+    padding: 1.5rem;
+    border: none;
+    border-radius: 2px;
+}
+
+.btn-submit {
+    width: 100%;
+    color: white;
+    background-color: #54b066;
+    font-size: 1.6rem;
+    margin-bottom: 4rem;
+}
+
+#title {
+    font-size: 3.2rem;
+    margin-bottom: 1.6rem;
+}
+
+#description {
+    font-weight: 200;
+    font-style: italic;
+}
+
+#survey-form {
+    background-color: #292648;
+    width: 720px;
+    margin: 0 auto;
+    max-width: 100%;
+    padding: 2rem 4.2rem;
+}
+
+.form-group {
+    margin-top: 3rem;
+    span {
+        font-size: 1.4rem;
+        font-weight: 300;
+    }
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 0.8rem;
+    margin-top: 1rem;
+    background-color: white;
+    font-size: 1.6rem;
+    color: #495057;
+    padding: 0 1rem;
+    font-weight: 300;
+}
+
+input {
+    margin: 0;
+}
+
+label {
+    font-size: 1.8rem;
+    display: block;
+    font-weight: 400;
+}
+
+.input{
+    &-radio {
+    margin: 1rem 1rem;
+    }
+
+    &-checkbox {
+        margin: 1rem 1.5rem;  
+    }
+
+    &-submit {
+        margin-bottom: 3rem;
+    }
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    transform: scale(1.6);
+    outline: none;
+    border: 0;
+}
+
+.textarea {
+    width: 100%;
+    resize: vertical;
+    padding: 1rem;
+    font-size: 1.8rem;
+}
+
+/* Mobile: width < 740px */
+@media screen and (max-width: 739px) {
+ 
+}
+
+/* Tablet: width >=740 and width <1024px */
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+  
+}
